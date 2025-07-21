@@ -1,4 +1,4 @@
-function home() {
+function Home() {
   return <h1>Welcome Home</h1>;
 }
-export default home;
+export default Home;
