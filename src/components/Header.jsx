@@ -7,11 +7,9 @@ function Header() {
   return (
     <>
     <header className=" p-3">
-        {match ? (
+        {match && (
         <h2>Catégorie : {match.params.query}</h2>
-        ) : (
-        <h2>Bienvenue sur le site</h2>
-        )}
+        ) }
     </header>
     <Nav className="justify-content-end" activeKey="/">
       <Nav.Item>
