@@ -5,12 +5,10 @@ import { NavLink } from "react-router-dom";
 function Header() {
     const match = useMatch('/category/:query');
   return (
-    <>
     <header className=" p-3">
         {match && (
         <h2>Catégorie : {match.params.query}</h2>
         ) }
-    </header>
     <Nav className="justify-content-end" activeKey="/">
       <Nav.Item>
         <Nav.Link as={NavLink} className="text-dark" to="/">
@@ -26,7 +24,7 @@ function Header() {
         </Nav.Link>
       </Nav.Item>
     </Nav>
-    </>
+    </header>
   );
 }
 export default Header;
