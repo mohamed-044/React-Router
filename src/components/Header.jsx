@@ -1,21 +1,21 @@
-import "./Header.css";
+import "../assets/styles/Header.css";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <Nav className="justify-content-end" activeKey="/">
       <Nav.Item>
-        <NavLink className="nav-link text-dark" to="/">
+        <Nav.Link as={NavLink} className="text-dark" to="/">
           Accueil
-        </NavLink>
+        </Nav.Link>
       </Nav.Item>
-      <NavLink className="nav-link text-dark" to="/category/vetements">
+      <Nav.Link as={NavLink} className="text-dark" to="/category/vetements">
         Vêtements
-      </NavLink>
+      </Nav.Link>
       <Nav.Item>
-        <NavLink className="nav-link text-dark" to="/category/chaussures">
+        <Nav.Link as={NavLink} className="text-dark" to="/category/chaussures">
           Chaussures
-        </NavLink>
+        </Nav.Link>
       </Nav.Item>
     </Nav>
   );
