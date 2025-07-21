@@ -1,4 +1,5 @@
 import { Outlet } from "react-router";
+import { Container } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -8,9 +9,9 @@ const Layout = () => {
       <header>
         <Header />
       </header>
-      <main>
+      <Container as="main">
         <Outlet />
-      </main>
+      </Container>
       <Footer />
     </>
   );
