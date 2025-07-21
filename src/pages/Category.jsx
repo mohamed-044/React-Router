@@ -3,7 +3,7 @@ const Category = () => {
   const { categorie } = useParams();
   return (
     <div>
-      <h1>Catégorie : {categorie}</h1>
+      <h1>{categorie}</h1>
     </div>
   );
 };
