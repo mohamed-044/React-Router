@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, Link } from "react-router";
 import "./App.css";
 import Home from "./pages/Home.jsx"
 import Layout from "./components/Layout.jsx";
